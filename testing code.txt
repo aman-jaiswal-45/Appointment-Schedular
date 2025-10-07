@@ -1,0 +1,15 @@
+curl -X POST http://localhost:3000/api/parse/text -H "Content-Type: application/json" -d '{"query": "I want to book an appointment with Dr. Sharma on 2025-10-10 at 3 PM for a dental checkup."}'
+
+curl -X POST http://localhost:3000/api/parse/text -H "Content-Type: application/json" -d '{"query": "Book an appointment on oct 10 at 10AM."}'
+
+curl -X POST http://localhost:3000/api/parse/text -H "Content-Type: application/json" -d '{"query": "Book a dentist appointment someday later."}'
+
+curl -X POST http://localhost:3000/api/parse/text -H "Content-Type: application/json" -d '{"query": "Schedule a dental appointment a day after tommorw"}'
+
+
+
+curl -X POST http://localhost:3000/api/parse/document -F "document=@D:\Test_Images\test1.png"
+
+curl -X POST http://localhost:3000/api/parse/document -F "document=@D:\Test_Images\test2.png"
+
+curl -X POST http://localhost:3000/api/parse/document -F "document=@D:\Test_Images\test3.png"
